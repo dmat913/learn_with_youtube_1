@@ -116,6 +116,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
         type: "uniform1f",
       },
     };
+    // eslint-disable-next-line
   }, [colors, opacities, totalSize, dotSize]);
 
   return (
@@ -279,6 +280,7 @@ const ShaderMaterial = ({
     });
 
     return materialObject;
+    // eslint-disable-next-line
   }, [size.width, size.height, source]);
 
   return (

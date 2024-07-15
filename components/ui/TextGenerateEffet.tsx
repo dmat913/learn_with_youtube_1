@@ -23,6 +23,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
+    // eslint-disable-next-line
   }, [scope.current]);
 
   const renderWords = () => {

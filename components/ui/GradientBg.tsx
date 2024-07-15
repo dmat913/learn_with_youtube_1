@@ -72,6 +72,7 @@ export const BackgroundGradientAnimation = ({
     }
 
     move();
+    // eslint-disable-next-line
   }, [tgX, tgY]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -83,8 +84,10 @@ export const BackgroundGradientAnimation = ({
   };
 
   const [isSafari, setIsSafari] = useState(false);
+
   useEffect(() => {
     setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+    // eslint-disable-next-line
   }, []);
 
   return (
